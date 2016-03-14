@@ -171,6 +171,38 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "simple-todos.html",
+			"settings":
+			{
+				"buffer_size": 3330,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "simple-todos.css",
+			"settings":
+			{
+				"buffer_size": 2262,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"contents": "",
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "simple-todos.js",
+			"settings":
+			{
+				"buffer_size": 2603,
+				"line_ending": "Unix"
+			}
+		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -208,10 +240,11 @@
 	},
 	"expanded_folders":
 	[
-		"/F/Development/meteor"
 	],
 	"file_history":
 	[
+		"/F/Development/meteor/.gitignore",
+		"/F/Development/meteor/meteor.sublime-project",
 		"/F/Development/Football/api/services/LeagueService.js",
 		"/F/Development/Football/api/models/Sequence.js",
 		"/F/Development/Football/api/services/DivisionService.js",
@@ -337,9 +370,7 @@
 		"/F/Development/backbone-auth/assets/js/app/header/list/view.js",
 		"/F/Development/backbone-auth/assets/js/main.js",
 		"/F/Development/backbone-auth/assets/js/app/users/list/view.js",
-		"/F/Development/Football/assets/js/app/menu/list/template/menuItem.tpl",
-		"/F/Development/Football/assets/js/app/menu/list/template/menu.tpl",
-		"/F/Development/backbone-auth/assets/js/app/header/app.js"
+		"/F/Development/Football/assets/js/app/menu/list/template/menuItem.tpl"
 	],
 	"find":
 	{
@@ -364,6 +395,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"scroll-tab",
 			"socket",
 			"backbone cannot",
 			"set",
@@ -490,8 +522,7 @@
 			".green",
 			"broadcast",
 			"cast.js",
-			"grey",
-			"4px"
+			"grey"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -499,6 +530,7 @@
 		"regex": false,
 		"replace_history":
 		[
+			"fixed-tab",
 			"\"",
 			".menu",
 			"paper-item",
@@ -521,8 +553,132 @@
 	"groups":
 	[
 		{
+			"selected": 0,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "simple-todos.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3330,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2096,
+								2096
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 405.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "simple-todos.css",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2262,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2260,
+								2260
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": -0.0,
+						"translation.y": 1575.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 3,
+					"file": "simple-todos.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2603,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2139,
+								2139
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 1215.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				}
 			]
 		}
 	],
@@ -543,11 +699,18 @@
 				0,
 				1,
 				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
 			]
 		],
 		"cols":
 		[
 			0.0,
+			0.609385113269,
 			1.0
 		],
 		"rows":
@@ -565,7 +728,7 @@
 	"project": "meteor.sublime-project",
 	"replace":
 	{
-		"height": 42.0
+		"height": 62.0
 	},
 	"save_all_on_build": true,
 	"select_file":

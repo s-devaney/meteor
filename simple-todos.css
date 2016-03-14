@@ -126,8 +126,34 @@ header .hide-completed {
 	}
 }*/
 
+.mdl-layout__tab-bar-container {
+  /*height: 64px;*/
+}
 .mdl-layout__tab-bar {
-	width: 100%;
-	box-sizing: border-box;
-	padding: 0;
+  padding: 0 !important;
+  padding-left: 16px !important;
+  box-sizing: border-box !important;
+  height: 100% !important;
+  width: 100% !important;
+}
+.mdl-layout__tab-bar .mdl-layout__tab {
+/*  height: 64px;
+  line-height: 64px;*/
+}
+.mdl-layout__tab-bar .mdl-layout__tab.is-active::after {
+  background: white !important;
+  height: 4px !important;
+}
+main > .mdl-layout__tab-panel {
+  padding: 8px;
+  padding-top: 48px;
+}
+
+.mdl-layout__tab-bar-button {
+  display: none !important;
+}
+
+.new-task.mdl-card {
+	width: 200px;
+	height: 24px;
 }
