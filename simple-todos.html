@@ -1,31 +1,89 @@
 <head>
 	<title>Todo List</title>
+	<link rel="stylesheet" href="/bower_components/material-design-lite/material.min.css">
+	<script src="/bower_components/material-design-lite/material.min.js"></script>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 </head>
 
 <body>
 	<div class="container">
-		<header>
-			<h1>Todo List - {{incompleteCount}}</h1>
+		<div class="mdl-layout mdl-js-layout mdl-layout--fixed-drawer">
+		  <header class="mdl-layout__header mdl-layout__header--waterfall">
+		    <!-- Top row, always visible -->
+		    <div class="mdl-layout__header-row">
+		      <!-- Title -->
+		      <span class="mdl-layout-title">Title</span>
+		      <div class="mdl-layout-spacer"></div>
+		      <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable
+		                  mdl-textfield--floating-label mdl-textfield--align-right">
+		        <label class="mdl-button mdl-js-button mdl-button--icon"
+		               for="waterfall-exp">
+		          <i class="material-icons">search</i>
+		        </label>
+		        <div class="mdl-textfield__expandable-holder">
+		          <input class="mdl-textfield__input" type="text" name="sample"
+		                 id="waterfall-exp">
+		        </div>
+		      </div>
+		    </div>
+		    <!-- Bottom row, not visible on scroll -->
+		    <!--<div class="mdl-layout__header-row">-->
+<!-- 		      <div class="mdl-layout-spacer"></div>
+		      <nav class="mdl-navigation">
+		        <a class="mdl-navigation__link" href="">Link</a>
+		        <a class="mdl-navigation__link" href="">Link</a>
+		        <a class="mdl-navigation__link" href="">Link</a>
+		        <a class="mdl-navigation__link" href="">Link</a>
+		      </nav> -->
+    <div class="mdl-layout__tab-bar mdl-js-ripple-effect mdl-color--primary-dark">
+    	<div class="mdl-layout-spacer"></div>
+      <a href="#scroll-tab-1" class="mdl-layout__tab is-active">Tab 1</a>
+      <a href="#scroll-tab-2" class="mdl-layout__tab">Tab 2</a>
+      <a href="#scroll-tab-3" class="mdl-layout__tab">Tab 3</a>
+      <a href="#scroll-tab-4" class="mdl-layout__tab">Tab 4</a>
+      <a href="#scroll-tab-5" class="mdl-layout__tab">Tab 5</a>
+      <a href="#scroll-tab-6" class="mdl-layout__tab">Tab 6</a>
+    </div>
+		    <!--</div>-->
+		  </header>
+		  <div class="mdl-layout__drawer">
+		    <span class="mdl-layout-title">Title</span>
+		    <nav class="mdl-navigation">
+		      <a class="mdl-navigation__link" href="">Link</a>
+		      <a class="mdl-navigation__link" href="">Link</a>
+		      <a class="mdl-navigation__link" href="">Link</a>
+		      <a class="mdl-navigation__link" href="">Link</a>
+		    </nav>
+		  </div>
+		  <main class="mdl-layout__content">
+		    <div class="page-content"><!-- Your content goes here -->
 
-			<label class="hide-completed">
-				<input type="checkbox" checked="{{hideComplete}}" />
-				Hide completed tasks
-			</label>
+				<header>
+					<h1>Todo List - {{incompleteCount}}</h1>
 
-			{{> loginButtons}}
+					<label class="hide-completed">
+						<input type="checkbox" checked="{{hideComplete}}" />
+						Hide completed tasks
+					</label>
 
-			{{#if currentUser}}
-				<form class="new-task">
-					<input type="text" name="text" placeholder="Type to add new tasks" />
-				</form>
-			{{/if}}
-		</header>
+					{{> loginButtons}}
 
-		<ul>
-			{{#each tasks}}
-				{{> task}}
-			{{/each}}
-		</ul>
+					{{#if currentUser}}
+						<form class="new-task">
+							<input type="text" name="text" placeholder="Type to add new tasks" />
+						</form>
+					{{/if}}
+				</header>
+
+				<ul>
+					{{#each tasks}}
+						{{> task}}
+					{{/each}}
+				</ul>
+
+		    </div>
+		  </main>
+		</div>
 	</div>
 </body>
 
