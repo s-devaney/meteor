@@ -53,8 +53,8 @@
 							</div>
 						{{/if}}
 						<header>
-							<label class="hide-completed">
-								<input type="checkbox" checked="{{hideComplete}}" />
+							<label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect hide-completed">
+								<input type="checkbox" checked="{{hideComplete}}" class="mdl-checkbox__input" />
 								Hide completed tasks
 							</label>
 							{{> loginButtons}}
@@ -76,9 +76,9 @@
 </body>
 
 <template name="task">
-	<li class="{{#if checked}}checked{{/if}} {{#if private}}private{{/if}}">
+	<li class="{{#if checked}}checked{{/if}} {{#if private}}private{{/if}} mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
 		<button class="delete">&times;</button>
-		<input type="checkbox" checked="{{checked}}" class="toggle-checked" />
+		<input type="checkbox" checked="{{checked}}" class="mdl-checkbox__input toggle-checked" />
 
 		{{#if isOwner}}
 			<button class="toggle-private">

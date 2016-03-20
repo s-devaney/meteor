@@ -153,7 +153,26 @@ main > .mdl-layout__tab-panel {
   display: none !important;
 }
 
+.mdl-layout__content {
+	margin: 0 auto !important;
+	width: 80vh !important;
+}
+
 .new-task.mdl-card {
-	width: 200px;
-	height: 24px;
+	width: 100%;
+	min-height: 32px;
+}
+
+.new-task.mdl-card form {
+	width: 100%;
+	height: 100%;
+}
+
+.new-task.mdl-card input {
+	width: calc(100% - 6px);
+	height: 100%;
+	border: none;
+	padding: 0 0 0 6px!important;
+	line-height: 32px !important;
+	font-size: 2vw;
 }
